@@ -1,0 +1,26 @@
+\makeatletter
+\ifthenelse{\pdf@strcmp{\languagename}{english}=0}
+{\addcontentsline{toc}{chapter}{Acknowledgments}}
+{\addcontentsline{toc}{chapter}{Danksagungen}}
+\makeatother
+\thispagestyle{empty}
+
+\vspace*{20mm}
+
+\begin{center}
+\makeatletter
+\ifthenelse{\pdf@strcmp{\languagename}{english}=0}
+{\usekomafont{section} Acknowledgments}
+{\usekomafont{section} Danksagungen}
+\makeatother
+\end{center}
+
+\vspace{10mm}
+I would like to thank Prof. Uwe Baumgarten for giving me the opportunity to write this thesis at his chair and also for all of his supports and advise during this work.
+\\
+\\
+Many thanks to my advisor, Sebastian Eckl for his invaluably wise advice, his patience and in particular for the spontaneous and fruitful discussions.
+\\
+\\
+Finally, I want to thank David Werner to generously share his experience in autonomous parking with me and all the other persons in the Chair of Operating Systems for the welcoming and supportive atmosphere.
+\cleardoublepage{}

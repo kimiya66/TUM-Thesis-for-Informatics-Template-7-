@@ -1,0 +1,50 @@
+\begin{titlepage}
+  \centering
+
+  \IfFileExists{logos/tum.pdf}{%
+    \includegraphics[height=20mm]{logos/tum.pdf}
+  }{%
+    \vspace*{20mm}
+  }
+
+  \vspace{5mm}
+  {\huge\MakeUppercase{\getFaculty{}}}\\
+
+  \vspace{5mm}
+  {\large\MakeUppercase{\getUniversity{}}}\\
+
+  \vspace{20mm}
+  %{\Large \getDoctype{}}
+  {\Large Mastesr's Thesis in Informatics}
+
+  \makeatletter
+  \vspace{15mm}
+  \ifthenelse{\pdf@strcmp{\languagename}{english}=0}
+  {
+  %{\huge\bfseries \getTitle{}}
+  {\huge\bfseries Development of an autonomous parking application for L4 Fiasco.OC / Genode using Microsoft AirSim and Matlab Simulink}
+
+  \vspace{10mm}
+  {\huge\bfseries \foreignlanguage{ngerman}Entwicklung einer Autonomen Einpark-Anwendung für L4 Fiasco.OC/Genode unter Verwendung von Microsoft AirSim und Matlab Simulink}
+  }
+  {
+  {\huge\bfseries \getTitleGer{}}
+
+  \vspace{10mm}
+  {\huge\bfseries \foreignlanguage{english}{\getTitle{}}}
+  }
+  \makeatother
+
+  \vspace{15mm}
+  \begin{tabular}{l l}
+    Author:          & Kimiya Beheshti Shirazi \\
+    Supervisor:      & Prof. Dr. Uwe Baumgarten \\
+    Advisor:         & Sebastian Eckl, M.Sc \\
+    Submission Date: & 16. August 2019 \\
+  \end{tabular}
+
+  \IfFileExists{logos/faculty.png}{%
+    \vfill{}
+    \includegraphics[height=20mm]{logos/faculty.png}
+  }{}
+\end{titlepage}
